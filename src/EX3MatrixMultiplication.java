@@ -1,6 +1,8 @@
 import java.util.Scanner;
-public class EX3MatrixMultiplication {
-    public static void main(String[] args) {
+public class EX3MatrixMultiplication
+{
+    public static void main(String[] args)
+    {
         Scanner scanner = new Scanner(System.in);
 // Input for first matrix
         System.out.print("Enter number of rows for Matrix A: ");
@@ -15,7 +17,8 @@ public class EX3MatrixMultiplication {
         int colsB = scanner.nextInt();
 
 // Validate matrix multiplication condition
-        if (colsA != rowsB) {
+        if (colsA != rowsB)
+        {
             System.out.println("Matrix multiplication not possible. Columns of A must equal rows of B.");
             return;
         }
@@ -42,17 +45,22 @@ public class EX3MatrixMultiplication {
                 }
             }
 // Perform matrix multiplication
-            for (int i = 0; i < rowsA; i++) {
-                for (int j = 0; j < colsB; j++) {
-                    for (int k = 0; k < colsA; k++) {
+            for (int i = 0; i < rowsA; i++)
+            {
+                for (int j = 0; j < colsB; j++)
+                {
+                    for (int k = 0; k < colsA; k++)
+                    {
                         result[i][j] += matrixA[i][k] * matrixB[k][j];
                     }
                 }
             }
 // Display the result
             System.out.println("Resultant Matrix after Multiplication:");
-            for (int i = 0; i < rowsA; i++) {
-                for (int j = 0; j < colsB; j++) {
+            for (int i = 0; i < rowsA; i++)
+            {
+                for (int j = 0; j < colsB; j++)
+                {
                     System.out.print(result[i][j] + " ");
                 }
                 System.out.println();
