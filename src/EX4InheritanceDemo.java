@@ -3,11 +3,13 @@ class Person
 {
     String name;
     int age;
-    void setPersonDetails(String name, int age) {
+    void setPersonDetails(String name, int age)
+    {
         this.name = name;
         this.age = age;
     }
-    void displayPersonDetails() {
+    void displayPersonDetails()
+    {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
@@ -17,7 +19,8 @@ class Student extends Person
 {
     int rollNo;
     String course;
-    void setStudentDetails(String name, int age, int rollNo, String course) {
+    void setStudentDetails(String name, int age, int rollNo, String course)
+    {
 // Calling the method of base class
         setPersonDetails(name, age);
         this.rollNo = rollNo;
