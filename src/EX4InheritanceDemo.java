@@ -1,5 +1,6 @@
 // Base class
-class Person {
+class Person
+{
     String name;
     int age;
     void setPersonDetails(String name, int age) {
@@ -12,7 +13,8 @@ class Person {
     }
 }
 // Derived class
-class Student extends Person {
+class Student extends Person
+{
     int rollNo;
     String course;
     void setStudentDetails(String name, int age, int rollNo, String course) {
@@ -31,8 +33,10 @@ class Student extends Person {
 }
 
 // Main class
-public class EX4InheritanceDemo {
-    public static void main(String[] args) {
+public class EX4InheritanceDemo
+{
+    public static void main(String[] args)
+    {
         Student student = new Student();
 // Set student details
         student.setStudentDetails("Alice", 20, 101, "Computer Science");
