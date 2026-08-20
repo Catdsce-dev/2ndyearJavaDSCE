@@ -27,7 +27,8 @@ class Student extends Person
         this.course = course;
     }
 
-    void displayStudentDetails() {
+    void displayStudentDetails()
+    {
 // Calling the method of base class
         displayPersonDetails();
         System.out.println("Roll No: " + rollNo);
